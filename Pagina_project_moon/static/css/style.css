@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(8, 8, 8);
 }
 
 .navbar{
@@ -63,6 +63,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 20px   ;
+    padding: 30px;
     background-color: rgb(0, 0, 0);
 }
 footer a{
@@ -84,7 +85,33 @@ footer a{
     height:400px;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items:center;
-    background-color:gray; /* ponele border radius*/
+    background-color:rgb(7, 7, 7);
     border-radius: 10px;
+    color:white;
+    box-shadow: 2px 4px 8px rgba(109, 107, 107, 0.096);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration:none;
 }
+
+.TarjetaVideojuego:hover{
+    transform: scale(1.03) translateY(-15px);
+    box-shadow: 10px 16px 20px rgba(87, 87, 87, 0.349);
+}
+
+.TarjetaVideojuego h1{
+    text-align: center;
+}
+
+.TarjetaVideojuego video{
+    width:90%;
+    height:80%;
+}
+
+
+.container a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
