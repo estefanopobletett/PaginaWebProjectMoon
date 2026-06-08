@@ -12,18 +12,18 @@
     <header>
         <nav class="navbar">
         <div class="Project">
-            <img class="logo"src="static/images/300px-Project_Moon_Logo.png" alt="Logo">
+            <img class="logo" src="static/images/300px-Project_Moon_Logo.png" alt="Logo">
         </div>
         <div class="nav-links">
             <div class="links">
             <a href="index.html" class="link">Inicio</a>
-            <a href="#" class="link">Juegos</a>
-            <a href="#" class="link">Mundo</a>
+            <a href="#Juegos" class="link">Juegos</a>
+            <a href="#Mundo" class="link">Mundo</a>
             <a href="pages/login.html" class="link">Login</a>
             </div>
 
             <div class="socialMedia">
-            <a href="https://www.youtube.com/?app=desktop&hl=es">
+            <a href="https://www.youtube.com/@ProjectMoonOfficial">
                 <img class="icon" src="static/images/Youtube_logo.png" alt="youtube">
             </a>
             <a href="https://x.com/ProjMoonStudio">
@@ -35,10 +35,11 @@
     </header>
 
     <main class="container">
-        <section class="Juegos_ProjectMoon">
+        <section class="Juegos_ProjectMoon" id="Juegos">
         <div class="Lob_Corporation TarjetaVideojuego">
-            <h1>Administra tu propia instalacion subterranea</h1>
-            <video  loop autoplay controls>
+            <img src="static/images/Lobotomy-Corporation-logo.png" alt="Lob_Corp">
+            <p>Contén anomalías , Gestiona empleados y produce energía para la Ciudad.</p>
+            <video autoplay muted loop>
             <source src="static/videos/Lob_video.mp4"><!--https://www.youtube.com/watch?v=WbN40vpse0k-->
             </video>
             <a href="https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/"
@@ -46,8 +47,9 @@
         </div>
 
         <div class="Lib_Ruina TarjetaVideojuego">
-            <h1>asd</h1>
-            <video  loop autoplay controls>
+            <img src="static/images/LoR-Logo.png" alt="Lib_Ruina">
+            <p>Convierte a tus invitados en libros mediante combates estratégicos.</p>
+            <video autoplay muted loop>
             <source src="static/videos/Lor_Video.mp4">
             </video>
             <a href="https://store.steampowered.com/app/1256670/Library_Of_Ruina/"
@@ -55,8 +57,9 @@
         </div>
 
         <div class="Lim_Company TarjetaVideojuego">
-            <h1>asd</h1>
-            <video loop autoplay controls>
+            <img src="static/images/Limbus_Company_Logo.png" alt="Limbus_Company">
+            <p>Recupera las ramas doradas en un RPG táctico basado por turnos.</p>
+            <video autoplay muted loop>
             <source src="static/videos/Limbus_Video.mp4">
             </video>
             <a href="https://store.steampowered.com/app/1973530/Limbus_Company/"
@@ -64,9 +67,22 @@
         </div>
         </section>
 
-        <section class="Mundo_ProjectMoon">
+        <section class="Mundo_ProjectMoon" id="Mundo">
         <div class="Explicacion_Mundo">
-    <h1>asd</h1>
+    <div class="Explicacion_Mundo_Img">
+        <img src="static/images/The_City.png" alt="The_City_Image">
+    </div>
+    <div class="Explicacion_Mundo_Texto">
+        <h1>The City</h1>
+        <p>Una metrópolis de concentracion empresarial</p>
+        <h2>Nuestra enorme ciudad está dividida en 26 distritos, 
+            cada uno de ellos único en cuanto a avances tecnológicos y cultura. 
+            ¡No hay dos distritos iguales! Por ejemplo, sea cual sea el Nido en el que te alojes 
+            podría considerarse una cuestión de cortesía asegurarse de que no se desperdicie comida.
+            Sin embargo, el Nido justo al lado del tuyo podría creer que es un acto virtuoso tirar las
+            sobras a los pobres, para que los indigentes disfruten de una especie de festín. Cuando viajes,
+            se recomienda que te informes sobre las costumbres y tabúes de cada Nido antes de visitarlo.</h2>
+    </div>
         </div>
         </section>
     </main>

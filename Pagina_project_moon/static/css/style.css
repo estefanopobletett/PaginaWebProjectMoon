@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(24, 28, 31);
 }
@@ -27,7 +31,6 @@ body{
 .logo{
     height: 100px;
     width: 100px;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 .logo:hover{
@@ -96,15 +99,16 @@ footer a{
 .TarjetaVideojuego{
     width:200px;
     flex:1;
-    height:400px;
+    height:525px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    text-align:center;
     background-color:rgb(7, 7, 7);
     border-radius: 10px;
     color: rgb(255, 251, 232);
-    box-shadow: 2px 4px 8px rgba(109, 107, 107, 0.096);
+    box-shadow: 2px 4px 8px rgba(32, 32, 32, 0.76);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration:none;
     border: 1px solid rgb(214, 169, 120);
@@ -112,33 +116,36 @@ footer a{
 
 .TarjetaVideojuego:hover{
     transform: scale(1.03) translateY(-15px);
-    box-shadow: 10px 16px 20px rgba(87, 87, 87, 0.349);
+    box-shadow: 10px 16px 20px rgba(32, 32, 32, 0.76);
 }
 
-.TarjetaVideojuego h1{
-    text-align: center;
-}
 
 .TarjetaVideojuego video{
     width:90%;
     height:80%;
 }
 
-
+.TarjetaVideojuego img{
+    width:60%;
+    height:170px;
+    border-radius:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
 .container a{
     text-decoration: none;
-    color: rgb(205 , 205, 205);
-
+    color: rgb(224, 205, 141);
+    margin-bottom:15px;
 }
 
 
-/*---LOGIN---*/
-.formulario{
+/*---LOGIN---------------------------------------------------------------------*/
+.formularios{
     padding: 40px;
     display: flex;
     justify-content: center;
 }
-.form{
+.forms{
     display:flex;
     flex-direction: column;
     padding: 30px;
@@ -153,21 +160,358 @@ footer a{
     width: 50%;
 }
 
-.respuesta{
+.respuestas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
+.respuestas input{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border: 1px solid rgb(214, 169, 120);
+}
+
+.respuestas select{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border: 1px solid rgb(214, 169, 120);
+}
 .Acepto{
     margin-top: 10px;
+}
+.regis button{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid rgb(214, 169, 120);
+}
+
+.user a{
+    color: rgb(214, 169, 120);
+    text-decoration:underline;
+    margin: 2px;
+}
+
+.Acepto input{
+    color: black;
 }
 
 
 /*---MUNDO--*/
-.Explicacion_Mundo{
-    width:90%;
-    height:90%;
-    background-color: black;
+
+.Mundo_ProjectMoon{
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+        transition:transform 0.3s ease;
 }
+.Explicacion_Mundo{
+    width:85%;
+    height:650px;
+    background-color: black;
+    display:flex;
+    justify-self:center;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    flex-direction: row;
+    border-radius:20px;
+    border: 3px solid rgb(214, 169, 120);
+    color:white;
+    text-align:center;
+    box-shadow: 4px 8px 16px rgb(0, 0, 0);
+    margin-bottom:70px;
+    flex-wrap: wrap;
+    padding:25px;
+}
+
+.Mundo_ProjectMoon:hover{
+    transform: scale(1.05);
+}
+.Explicacion_Mundo_Texto{
+    flex:2;
+}
+
+.Explicacion_Mundo_Texto h1{
+    font-size:50px;
+    color:red;
+}
+.Explicacion_Mundo_Texto p{
+    color: rgb(214, 169, 120);
+    font-weight:bold;
+    font-size:20px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.Explicacion_Mundo_Texto h2{
+    font-size:22px;
+    color:white;
+}
+.Explicacion_Mundo_Img{
+flex:1;
+    height:90%;
+    width:90%;
+}
+
+.Explicacion_Mundo img{
+    width:700px;
+    height:500px;
+    margin-top: 35px;
+}
+/*DUDAS -------------------------------------------FRECUENTES*/
+.dudas_frecuentes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+        text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8),
+        0 0 10px rgba(245,208,138,0.3);
+        position: relative; 
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+}
+.dudas_frecuentes h1{
+    font-size: 3rem;
+    color: #f5d08a;
+    text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8),
+        0 0 10px rgba(245,208,138,0.3);
+}
+body{
+    background:#111820;
+    font-family:Arial, sans-serif;
+}
+
+.que_es_project{
+    width:80%;
+    margin:auto;
+    padding:0;
+}
+
+.que_es_project li{
+    list-style:none;
+    background:#161d24;
+    border:1px solid #2d3138;
+    border-radius:10px;
+    margin:15px 0;
+    padding:20px;
+}
+
+.pregunta{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#e6c07b;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.btn{
+    background:none;
+    border:none;
+    color:#e6c07b;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.respuesta{
+    display:none;
+    margin-top:15px;
+    color:white;
+    line-height:1.5;
+}
+
+.respuesta.activa{
+    display:block;
+}
+
+/*DUDAS -------------------------------------------FRECUENTES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+SOPORTE TÉCNICO 
+   ========================================================================== */
+
+.soporte-container {
+    margin-top: 150px; 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-height: calc(100vh - 240px); 
+}
+
+.soporte-card {
+    background-color: rgb(7, 7, 7);
+    border: 1px solid rgb(214, 169, 120); 
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(214, 169, 120, 0.15);
+}
+
+.soporte-card h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(214, 169, 120);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.soporte-subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+
+.server-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px dashed rgba(214, 169, 120, 0.3);
+    font-size: 14px;
+}
+
+
+.soporte-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(214, 169, 120);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(214, 169, 120, 0.4);
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: rgb(214, 169, 120);
+    box-shadow: 0 0 8px rgba(214, 169, 120, 0.4);
+    background-color: rgba(15, 15, 15, 1);
+}
+
+.form-group select option {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+.btn-submit {
+    background-color: transparent;
+    border: 2px solid rgb(214, 169, 120);
+    color: rgb(214, 169, 120);
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.btn-submit a{
+    text-decoration: none;
+    color: rgb(214, 169, 120);
+}
+
+.btn-submit:hover {
+    background-color: rgb(214, 169, 120);
+    color: black;
+    box-shadow: 0 0 15px rgba(214, 169, 120, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+/*gracias*/
+.reporte{
+    width:30px;
+    height:450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    background-color:rgb(7, 7, 7);
+    border-radius: 10px;
+    color: rgb(255, 251, 232);
+    box-shadow: 2px 4px 8px rgba(32, 32, 32, 0.76);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration:none;
+    border: 1px solid rgb(214, 169, 120);
+}
+/*gracias*/
