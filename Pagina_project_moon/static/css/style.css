@@ -216,7 +216,6 @@ footer a{
 .Mundo_ProjectMoon{
     display:flex;
     justify-content: center;
-    overflow:hidden;
         transition:transform 0.3s ease;
 }
 .Explicacion_Mundo{
@@ -237,6 +236,8 @@ footer a{
     margin-bottom:70px;
     flex-wrap: wrap;
     padding:25px;
+    overflow:scroll;
+    scrollbar-width: none;
 }
 
 .Mundo_ProjectMoon:hover{
@@ -367,12 +368,13 @@ body{
 
 /* ==========================================================================
 SOPORTE TÉCNICO 
-   ========================================================================== */
+========================================================================== */
 
 .soporte-container {
     margin-top: 150px; 
     margin-bottom: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -392,7 +394,6 @@ SOPORTE TÉCNICO
 .soporte-card h1 {
     font-size: 24px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     color: rgb(214, 169, 120);
     text-align: center;
     margin-bottom: 8px;
@@ -403,16 +404,16 @@ SOPORTE TÉCNICO
     font-size: 13px;
     color: #888;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
 
-.server-status {
+.server-estado {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: rgb(214, 169, 120);
     background-color: rgba(255, 255, 255, 0.02);
     padding: 12px;
     border-radius: 6px;
@@ -442,8 +443,26 @@ SOPORTE TÉCNICO
     letter-spacing: 0.5px;
 }
 
-.form-group input,
-.form-group select,
+.form-group input{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(214, 169, 120, 0.4);
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+
+    outline: none;
+}
+.form-group select{
+        background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(214, 169, 120, 0.4);
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+}
 .form-group textarea {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(214, 169, 120, 0.4);
@@ -453,14 +472,6 @@ SOPORTE TÉCNICO
     font-size: 14px;
     transition: all 0.3s ease;
     outline: none;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: rgb(214, 169, 120);
-    box-shadow: 0 0 8px rgba(214, 169, 120, 0.4);
-    background-color: rgba(15, 15, 15, 1);
 }
 
 .form-group select option {
@@ -476,7 +487,6 @@ SOPORTE TÉCNICO
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -498,20 +508,26 @@ SOPORTE TÉCNICO
     transform: translateY(0);
 }
 /*gracias*/
-.reporte{
-    width:30px;
-    height:450px;
-    display:flex;
+.reporte {
+    height: 300px;
+    width: 650px;
+    font-size: 40px;
+    display: none; 
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    text-align:center;
-    background-color:rgb(7, 7, 7);
+    align-items: center;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
     border-radius: 10px;
-    color: rgb(255, 251, 232);
+    color: rgb(214, 169, 120);
     box-shadow: 2px 4px 8px rgba(32, 32, 32, 0.76);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration:none;
+    text-decoration: none;
     border: 1px solid rgb(214, 169, 120);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 /*gracias*/

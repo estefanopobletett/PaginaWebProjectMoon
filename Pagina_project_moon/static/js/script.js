@@ -12,3 +12,14 @@ botones.forEach(boton => {
             : "+";
     });
 });
+
+document.getElementById('soporte-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    this.style.display = 'none';
+    
+    const cuadro = document.getElementById('cuadroGracias');
+    cuadro.style.display = 'flex';
+    
+    this.reset();
+});
