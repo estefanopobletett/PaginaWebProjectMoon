@@ -23,3 +23,4 @@ document.getElementById('soporte-form').addEventListener('submit', function(even
     
     this.reset();
 });
+
