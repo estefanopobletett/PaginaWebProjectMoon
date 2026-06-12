@@ -120,8 +120,14 @@ footer a{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration:none;
     border: 1px solid rgb(214, 169, 120);
+    gap: 5px;
 }
-
+.TarjetaVideojuego a{
+    transition: all 0.3s ease;
+}
+.TarjetaVideojuego a:hover{
+    transform: scale(1.1);
+}
 .TarjetaVideojuego:hover{
     transform: scale(1.03) translateY(-15px);
     box-shadow: 10px 16px 20px rgba(32, 32, 32, 0.76);
