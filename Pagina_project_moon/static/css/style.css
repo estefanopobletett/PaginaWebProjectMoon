@@ -26,12 +26,13 @@ body{
     z-index:5;
     top:0;
     left:0;
-    flex-wrap: wrap;
 }
 
 .logo{
-    height: 100px;
-    width: 100px;
+    min-width: 10px;
+    min-height: 10px;
+    max-height: 100px;
+    max-width: 100px;
     transition: transform 0.3s ease;
 }
 .logo:hover{
@@ -103,8 +104,10 @@ footer a{
 
 .TarjetaVideojuego{
     width:200px;
+    min-width: 300px;
     flex:1;
-    height:525px;
+    min-height: 525px;
+    max-height:525px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -328,6 +331,10 @@ body{
     border-radius:10px;
     margin:15px 0;
     padding:20px;
+    transition: transform 0.3s ease;
+}
+.que_es_project li:hover{
+    transform: scale(1.1);
 }
 
 .pregunta{
@@ -338,6 +345,7 @@ body{
     font-size:22px;
     font-weight:bold;
 }
+
 
 .btn{
     background:none;
