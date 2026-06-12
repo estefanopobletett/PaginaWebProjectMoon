@@ -165,14 +165,18 @@ footer a{
     width: 50%;
 }
 
+
 .respuestas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    transition: transform 0.3s ease;
 }
-
+.respuestas:hover{
+    transform: scale(1.1);
+}
 .respuestas input{
     color:white;
     background-color: black;
